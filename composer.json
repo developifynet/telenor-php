@@ -1,6 +1,6 @@
 {
     "name": "developifynet/telenor-php",
-    "description": "Telenor Pakistan SMS API Wrapper for PHP",
+    "description": "Telenor Pakistan Corporate SMS API Wrapper for PHP",
     "license": "MIT",
     "keywords": [
         "telenor",
@@ -29,7 +29,8 @@
             "Developifynet\\Telenor": "src/"
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "extra": {
         "laravel": {
             "providers": [
