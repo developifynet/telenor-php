@@ -16,7 +16,7 @@ Within your controllers, you can call TelenorSMS Object and can send quick SMS.
 
 
 
-#####For Single Number
+##### For Single Number
 ```php
 use \Developifynet\Telenor\TelenorSMS;
 public function index()
@@ -35,7 +35,7 @@ public function index()
 }
 ```
 
-#####For Multiple Numbers
+##### For Multiple Numbers
 ```php
 use \Developifynet\Telenor\TelenorSMS;
 public function index()
