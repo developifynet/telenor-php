@@ -1,0 +1,43 @@
+{
+    "name": "developifynet/telenor-php",
+    "description": "Telenor Pakistan SMS API Wrapper for PHP",
+    "license": "MIT",
+    "keywords": [
+        "telenor",
+        "corporate sms",
+        "api",
+        "php",
+        "sdk"
+    ],
+    "authors": [
+        {
+            "name": "Mustafa Mughal",
+            "email": "efficientbit@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "dev-master",
+        "phpunit/phpunit": "^6.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "Developifynet\\Telenor": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Developifynet\\Telenor\\TelenorServiceProvider"
+            ],
+            "aliases": {
+                "Telenor": "Developifynet\\Telenor\\Telenor"
+            }
+        }
+    }
+}
