@@ -1,5 +1,10 @@
 # Telenor Pakistan Corporate SMS API Wrapper for PHP
 
+<a href="https://travis-ci.org/developifynet/telenor-php"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/developifynet/telenor-php"><img src="https://poser.pugx.org/developifynet/telenor-php/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/developifynet/telenor-php"><img src="https://poser.pugx.org/developifynet/telenor-php/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/developifynet/telenor-php"><img src="https://poser.pugx.org/developifynet/telenor-php/license.svg" alt="License"></a>
+
 This composer package offers a quick Telenor Corporate SMS setup for your Laravel applications.
 
 ## Installation
