@@ -15,7 +15,47 @@ Begin by pulling in the package through Composer.
 composer require developifynet/telenor-php
 ```
 
-## Usage
+## Laravel Framework Usage
+
+Within your controllers, you can call Telenor facade and can send quick SMS.
+
+##### For Single Number
+```php
+use Developifynet\Telenor\Telenor;
+public function index()
+{
+    $SMSObj = array(
+        'username' => '<PUT_YOUR_USERNAME_HERE>',   // Usually this is mobile number
+        'password' => '<PUT_YOUR_PASSWORD_HERE>',   // User your password here
+        'to' => '923XXXXXXXXX',                     // You can provide single number as string or an array of numbers
+        'text' => '<PUT_YOUR_MESSAGE_HERE>',        // Message string you want to send to provided number(s)
+        'mask' => '<PUT_YOUR_MASK_HERE>',           // Use a registered mask with Telenor
+        'test_mode' => '0',                         // 0 for Production, 1 for Mocking as Test
+    );
+    
+    $response = Telenor::SendSMS($SMSObj);
+}
+```
+
+##### For Multiple Numbers
+```php
+use Developifynet\Telenor\Telenor;
+public function index()
+{
+    $SMSObj = array(
+        'username' => '<PUT_YOUR_USERNAME_HERE>',   // Usually this is mobile number
+        'password' => '<PUT_YOUR_PASSWORD_HERE>',   // User your password here
+        'to' => ['923XXXXXXXXX', '923XXXXXXXXX'],   // You can provide single number as string or an array of numbers
+        'text' => '<PUT_YOUR_MESSAGE_HERE>',        // Message string you want to send to provided number(s)
+        'mask' => '<PUT_YOUR_MASK_HERE>',           // Use a registered mask with Telenor
+        'test_mode' => '0',                         // 0 for Production, 1 for Mocking as Test
+    );
+    
+    $response = Telenor::SendSMS($SMSObj);
+}
+```
+
+## Other Usage
 
 Within your controllers, you can call TelenorSMS Object and can send quick SMS.
 
