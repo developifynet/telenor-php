@@ -12,7 +12,7 @@ This composer package offers a quick Telenor Corporate SMS setup for your Larave
 Begin by pulling in the package through Composer.
 
 ```bash
-composer require mudassar1/telenor-sms-php
+composer require developifynet/telenor-sms-php
 ```
 
 ## Laravel Framework Usage

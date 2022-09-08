@@ -1,5 +1,5 @@
 {
-    "name": "mudassar1/telenor-sms-php",
+    "name": "developifynet/telenor-php",
     "description": "Telenor Pakistan Corporate SMS API Wrapper for PHP",
     "license": "MIT",
     "keywords": [
@@ -10,6 +10,10 @@
         "sdk"
     ],
     "authors": [
+        {
+            "name": "Mustafa Mughal",
+            "email": "efficientbit@gmail.com"
+        },
         {
             "name": "Mudassar Mughal",
             "email": "mudassary0@gmail.com"
